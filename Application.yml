@@ -48,4 +48,4 @@ spring:
 
  # FILE UPLOAD DIR     
 upload:
-  path: E:\javaprojects\AIGL-28-08-2023\FileService\src\main\resources\static\
+  path: E:\javaprojects\AIG_IMG\
