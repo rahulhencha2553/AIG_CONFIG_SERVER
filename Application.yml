@@ -39,6 +39,18 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
 
+  #kafka configuration  
+  kafka:
+        consumer:
+            bootstrap-servers: localhost:9092
+            key-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
+        producer:
+            bootstrap-servers: localhost:9092
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
   # MULTIPART CONFIGURATION
   servlet:
     multipart:
