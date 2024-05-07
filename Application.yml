@@ -4,12 +4,12 @@ APP:
   SECRET: 31d596fd4632b3d8f17f23ceaeb4dffd
 
 #SMS CONFIGURATION
-CLIENT:
-  ID: 1086646556890-1j25hvfgpjmud4vus1t0lt010d1s6brf.apps.googleusercontent.com
-SMS-MESSAGE: 'Your verification otp for login in AIGL is :'
-TWILIO_ACCOUNT_SID: enter twilio account sid
-TWILIO_AUTH_TOKEN: enter twilio account token
-TWILIO_NUMBER: 1234567890
+termii:
+  api-key: TLy4fqDk8iJXns6CQcTpvbTKgNFIC6gZushjMsdd4p8QvYTZDJgnneoVkJpk2E
+  sender-id: AIGNIGERIA
+mailer:
+  sender:
+    api-key: mlsn.95f9e4a92d3e7393b791684f0ba8609e5ed24dd7fa6136d3746db3c092b51830
 
 #EUREKA SERVER CONFIGURATION
 eureka:
@@ -17,7 +17,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -38,26 +38,31 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
-    
- kafka:
-    consumer:
-        bootstrap-servers: localhost:9092
-        key-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
-        value-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
-    producer:
-        bootstrap-servers: localhost:9092
-        key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.apache.kafka.common.serialization.StringSerializer
-        
+
   # MULTIPART CONFIGURATION
   servlet:
     multipart:
       enabled: true
-      max-file-size: 1000MB
-      max-request-size: 100MB
+      max-file-size: 20MB
+      max-request-size: 20MB
 
  # FILE UPLOAD DIR     
 upload:
   path: E:\javaprojects\AIGL-28-08-2023\FileService\src\main\resources\static\
-rahul:
-  name: RAHUL
+
+
+  #  CORS POLICY CONFIGURATION
+#  Note :- add the origins sepereated by ,
+cors:
+  allowed_origins:
+    admin: http://localhost:4500,http://aigadmin.dollopinfotech.com
+    
+    user: http://localhost:4600
+  
+    portal_officer: http://localhost:4200,http://aigverification.dollopinfotech.com
+    
+    verification_officer: 
+    
+    emergency_officer: http://localhost:4300,http://aigemergency.dollopinfotech.com
+    
+    api_doc_user: http://localhost:4400,http://aigapidoc.dollopinfotech.com,http://51.20.251.73:9090,http://api-doc-app.s3-website.af-south-1.amazonaws.com
