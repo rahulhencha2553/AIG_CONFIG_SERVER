@@ -29,13 +29,13 @@ secret:
 spring:
   kafka:
     consumer:
-      bootstrap-servers: http://127.0.0.1:54667
+      bootstrap-servers: http://127.0.0.1:55462
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       
     producer:
-      bootstrap-servers: http://127.0.0.1:54667
+      bootstrap-servers: http://127.0.0.1:55462
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       
