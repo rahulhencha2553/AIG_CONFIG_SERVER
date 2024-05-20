@@ -17,8 +17,9 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://parent-project-0.parent-project:8761/eureka/
   instance:
+    hostname: parent-project-0.parent-project
     prefer-ip-address: true
 
 # JWT AUTHENTICATION SECRET KEY
@@ -28,20 +29,21 @@ secret:
 # DATABASE AND JPA CONFIGURATION
 spring:
   kafka:
-    consumer:
-      bootstrap-servers: http://127.0.0.1:51275
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    bootstrap-servers: a846a4b09fe0c4221b5be54612cc16db-1126670917.eu-west-2.elb.amazonaws.com:9092
+    # consumer:
+    #   bootstrap-servers: localhost:9092
+    #   auto-offset-reset: earliest
+    #   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #   value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       
-    producer:
-      bootstrap-servers: http://127.0.0.1:51275
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    # producer:
+    #   bootstrap-servers: localhost:9092
+    #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #   value-serializer: org.apache.kafka.common.serialization.StringSerializer
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: Java@2023
+    password: AigDeployment123
     username: root
   jpa:
     hibernate:
@@ -63,21 +65,18 @@ upload:
   path: E:\javaprojects\AIGL-28-08-2023\FileService\src\main\resources\static\
 
 
-
-
-
   #  CORS POLICY CONFIGURATION
 #  Note :- add the origins sepereated by ,
 cors:
   allowed_origins:
-    admin: http://localhost:4500,http://aigadmin.dollopinfotech.com
+    admin: http://localhost:4500,https://aigadmin.dollopinfotech.com,https://admin.aignigeria.com,https://share.aignigeria.com
     
     user: http://localhost:4600
   
-    portal_officer: http://localhost:4200,http://aigverification.dollopinfotech.com
+    portal_officer: https://localhost:4200,https://aigverification.dollopinfotech.com,https://verification.aignigeria.com
     
     verification_officer: 
     
-    emergency_officer: http://localhost:4300,http://aigemergency.dollopinfotech.com
+    emergency_officer: https://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com
     
-    api_doc_user: http://localhost:4400,http://aigapidoc.dollopinfotech.com,http://51.20.251.73:9090,http://api-doc-app.s3-website.af-south-1.amazonaws.com
+    api_doc_user: https://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com
