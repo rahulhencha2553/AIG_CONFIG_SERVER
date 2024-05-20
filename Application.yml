@@ -43,7 +43,7 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: AigDeployment123
+    password: Java@2023
     username: root
   jpa:
     hibernate:
