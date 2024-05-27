@@ -73,10 +73,10 @@ cors:
     
     user: http://localhost:4600
   
-    portal_officer: https://localhost:4200,https://aigverification.dollopinfotech.com,https://verification.aignigeria.com
+    portal_officer: http://localhost:4200,https://aigverification.dollopinfotech.com,https://verification.aignigeria.com
     
     verification_officer: 
     
-    emergency_officer: https://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com
+    emergency_officer: http://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com
     
-    api_doc_user: https://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com
+    api_doc_user: http://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com
