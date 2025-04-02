@@ -28,18 +28,18 @@ secret:
 
 # DATABASE AND JPA CONFIGURATION
 spring:
-  # kafka:
-  #   bootstrap-servers: a846a4b09fe0c4221b5be54612cc16db-1126670917.eu-west-2.elb.amazonaws.com:9092
-    # consumer:
-    #   bootstrap-servers: localhost:9092
-    #   auto-offset-reset: earliest
-    #   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    #   value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  kafka:
+    bootstrap-servers: a846a4b09fe0c4221b5be54612cc16db-1126670917.eu-west-2.elb.amazonaws.com:9092
+    consumer:
+      bootstrap-servers: localhost:9092
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       
-    # producer:
-    #   bootstrap-servers: localhost:9092
-    #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
-    #   value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
