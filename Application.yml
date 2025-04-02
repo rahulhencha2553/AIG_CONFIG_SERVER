@@ -29,7 +29,7 @@ secret:
 # DATABASE AND JPA CONFIGURATION
 spring:
   kafka:
-    bootstrap-servers: a846a4b09fe0c4221b5be54612cc16db-1126670917.eu-west-2.elb.amazonaws.com:9092
+    bootstrap-servers: localhost:9092
     consumer:
       bootstrap-servers: localhost:9092
       auto-offset-reset: earliest
