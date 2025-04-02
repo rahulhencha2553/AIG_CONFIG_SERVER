@@ -28,18 +28,18 @@ secret:
 
 # DATABASE AND JPA CONFIGURATION
 spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-    consumer:
-      bootstrap-servers: localhost:9092
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  # kafka:
+  #   bootstrap-servers: localhost:9092
+  #   consumer:
+  #     bootstrap-servers: localhost:9092
+  #     auto-offset-reset: earliest
+  #     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  #     value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       
-    producer:
-      bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  #   producer:
+  #     bootstrap-servers: localhost:9092
+  #     key-serializer: org.apache.kafka.common.serialization.StringSerializer
+  #     value-serializer: org.apache.kafka.common.serialization.StringSerializer
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
