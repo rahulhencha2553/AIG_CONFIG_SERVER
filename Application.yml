@@ -80,3 +80,9 @@ cors:
     emergency_officer: http://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com,http://192.168.1.243:4300
     
     api_doc_user: http://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com,http://192.168.1.243:4400
+
+# Cloudinary Configuration
+cloud:
+  name: dkj3hvrgu
+  api-key: 749995168683536
+  secret-key: kq1SvnapL-bZtCzzjQwmtq_K3Q8
