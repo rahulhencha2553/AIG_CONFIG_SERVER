@@ -79,7 +79,7 @@ cors:
     
     emergency_officer: http://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com,http://192.168.1.243:4300
     
-    api_doc_user: http://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com,http://192.168.1.243:4400
+    api_doc_user: http://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com,http://192.168.1.54:4400
 
 # Cloudinary Configuration
 cloud:
