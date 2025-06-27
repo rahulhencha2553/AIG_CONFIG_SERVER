@@ -69,17 +69,17 @@ upload:
 #  Note :- add the origins sepereated by ,
 cors:
   allowed_origins:
-    admin: http://localhost:4500,https://aigadmin.dollopinfotech.com,https://admin.aignigeria.com,https://share.aignigeria.com,http://192.168.1.243:4500
+    admin: http://localhost:4500,https://admin.aig.dollopinfotech.com,https://admin.aignigeria.com,https://share.aig.dollopinfotech.com,http://192.168.1.243:4500
     
     user: http://localhost:4600,http://192.168.1.243:4600
   
-    portal_officer: http://localhost:4200,https://aigverification.dollopinfotech.com,https://verification.aignigeria.com,http://192.168.1.243:4200
+    portal_officer: http://localhost:4200,https://verification.aig.dollopinfotech.com,https://verification.aignigeria.com,http://192.168.1.243:4200
     
     verification_officer: 
     
-    emergency_officer: http://localhost:4300,https://aigemergency.dollopinfotech.com,https://emergency.aignigeria.com,http://192.168.1.243:4300
+    emergency_officer: http://localhost:4300,https://emergency.aig.dollopinfotech.com,https://emergency.aignigeria.com,http://192.168.1.243:4300
     
-    api_doc_user: http://localhost:4400,https://aigapidoc.dollopinfotech.com,https://developer.aignigeria.com,http://192.168.1.54:4400
+    api_doc_user: http://localhost:4400,https://organization.aig.dollopinfotech.com,https://developer.aignigeria.com,http://192.168.1.54:4400
 
 # Cloudinary Configuration
 cloud:
